@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <title>
+            Sidebar Navigation Menu
+        </title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+<body> 
+    <div class="Navigation"> </div>
+    <div class="MenuToggle"></div>
+    <script>
+        let MenuToggle = document.querySelector('.menuToggle');
+        let Navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){ 
+            navigation.classList.toggle('active');
+
+
+        }
+    </script>
+</body>    
 </html>
