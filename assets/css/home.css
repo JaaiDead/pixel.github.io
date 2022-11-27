@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:ital,wght@1,200&display=swap')
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#f53b57
+    transition: 0.5s;
+}
+.navmain
+{
+    position: relative;
+    width: 70px;
+    height: 350px;
+    background: #fff;
+    border-radius: 35px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 1);    
+}
+.navmain ul
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.navmain ul li
+{
+    position: 
+    list-style: none;
+    width:70px;
+    height: 70px;
+    z-index:1;
+
+}
+.navmain ul li a 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+.navmain ul li a .icon
+{
+    position: 
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    transition:0.5s;
+    
+}
+.navamain ul li.active a .icon
+{
+ color: #fff;
+
+
+}
+
+.navmain  ul li a .icon i
+{
+    font-size: 24px;
+
+}
+.navmain ul li a .title
+{
+    position: absolute;
+    top:50%;
+    left: 110px;
+    background: #fff;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: .5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+}
+.navmain ul li:hover a .title
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-25px) translateZ(-50%);
+}
+.navmain ul li a .title::before
+{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: red;
+    left: -10px;
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+    border-radius: 2px;
+
+}
+.navamain ul .indicator
+{
+    position: absolute;
+    left:0;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+.navamain ul .indicator::before
+{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    transition: 0.5s;   
+}
+.navamain ul line:nth-child(1).active ~ .indicator
+
+{
+    transform: translateY(calc(70px* 0));
+
+}
+.navamain ul line:nth-child(2).active ~ .indicator
+
+{
+    transform: translateY(calc(70px* 1));
+
+}
+.navamain ul line:nth-child(3).active ~ .indicator
+
+{
+    transform: translateY(calc(70px* 2));
+
+}
+.navamain ul line:nth-child(4).active ~ .indicator
+
+{
+    transform: translateY(calc(70px* 3));
+
+}
+.navamain ul line:nth-child(5).active ~ .indicator
+
+{
+    transform: translateY(calc(70px* 4));
+
+}
+.navamain ul line:nth-child(1).active ~ .indicator::before
+{
+    background: #f53b57;
+}
+.navamain ul line:nth-child(2).active ~ .indicator::before
+{
+    background: #3c40c6;
+}
+.navamain ul line:nth-child(3).active ~ .indicator::before
+{
+    background: #05c46b;
+}
+.navamain ul line:nth-child(4).active ~ .indicator::before
+{
+    background: #0fbcf9;
+}
+.navamain ul line:nth-child(5).active ~ .indicator::before
+{
+    background: #ffa801;
+
+}
+
+
+
+
+
+
+
+
+
