@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Pixel-Print</title>
-    <link rel="stylesheet" href="assets/css/home.css">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+    <title>Pixel-Prints</title>
+    <link rel="stylesheets" type="text/css" herf="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <nav id="primary" class="navbar">
-
-      <!-- Open/Close Navigation Icons -->
-      <span class="slider-icon">
-        <a href="#">
-          <svg id="open" class="open-slider active" width="30" height="30">
-            <path d="M0,5 30,5" stroke="#fff" stroke-width="4"></path>
-            <path d="M0,14 30,14" stroke="#fff" stroke-width="4"></path>
-            <path d="M0,23 30,23" stroke="#fff" stroke-width="4"></path>
-          </svg>
-          <svg id="close" class="close-slider" width="30" height="30">
-            <line x1="4" y1="4" x2="24" y2="24" stroke="#fff" stroke-width="5"></line>
-            <line x1="4" y1="24" x2="24" y2="4" stroke="#fff" stroke-width="5"></line>
-          </svg>
-        </a>
-      </span>
-
-      <!-- Slide-Out Navigation -->
-      <div id="nav-screen" class="">
-        <ul class="top-level">
-          <li class="top-level nav-item">
-            Main Menu &rarr;
-            <div class="second-pane">
-              <ul class="second-level sub-menu">
-                <li class="second-level nav-item">
-                  Shop-Custom-Prints &rarr;  
-                  <div class="third-pane">
-                    <ul class="third-level sub-sub-menu">
-                      <li class="third-level nav-item">
-                        Menu
-                      </li>
-                      <li class="third-level nav-item">Upload</li>
-                      <li class="third-level nav-item">Cart</li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="second-level nav-item">Support</li>
-                <li class="second-level nav-item">FAQ</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </nav><!-- end #primary.navbar -->
-
-    <script src="assets/js/main.js"></script>
-
-
+    <div class="navmain">
+      <ul>
+        <li class="list">
+          <a href="#">
+            <span class="icon"></span><i class="fa-light fa-house"></i>
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"></span><i class="fa-regular fa-user-astronaut"></i>
+            <span class="title">Profile</span>
+          </a>
+        </li><li class="list">
+          <a href="#">
+            <span class="icon"></span><i class="fa-regular fa-message-lines"></i>
+            <span class="title">Messages</span>
+          </a>
+        </li><li class="list">
+          <a href="#">
+            <span class="icon"></span><i class="fa-regular fa-question"></i>
+            <span class="title">Help</span>
+          </a>
+        </li><li class="list">
+          <a href="#">
+            <span class="icon"></span><i class="fa-regular fa-gear"></i>
+            <span class="title">Settings</span>
+          </a>
+      
+        </li>
+      </ul>
 
   </body>
 </html>
