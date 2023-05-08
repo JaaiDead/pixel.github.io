@@ -1,11 +1,30 @@
-/* Navigation Bar */
+/* Header */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
 }
 
 nav a {
@@ -14,82 +33,21 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ccc;
 }
 
-/* Logo */
-.logo {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-/* Search Bar */
-.search-bar {
+/* Main */
+main {
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: white;
-  border-radius: 25px;
-  padding: 5px 15px;
-  margin-right: 20px;
-}
-
-.search-bar input[type="text"] {
-  border: none;
-  padding: 5px;
-  font-size: 1em;
-  width: 100%;
-}
-
-.search-bar button {
-  border: none;
-  background-color: transparent;
-  font-size: 1em;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-/* Button */
-.button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0062cc;
-}
-
-/* Cart */
-.cart {
-  display: flex;
-  align-items: center;
-  background-color: #007bff;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-.cart span {
-  margin-left: 5px;
-  font-size: 1.2em;
-}
-
-.cart:hover {
-  background-color: #0062cc;
+  height: 80vh;
 }
 
 /* Footer */
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
+  background-color: black;
   color: white;
-  height: 100px;
-  font-size: 0.8em;
+  text-align: center;
+  padding: 10px;
 }
