@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width,inital-scale=1.0">
-    <title>Pixel-Prints</title>
-    <link rel="stylesheets" type="text/css" herf="assets/css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <div class="navmain">
-      <ul>
-        <li class="list active" data-colour="#f53b57">
-          <a href="#">
-            <span class="icon"></span><i class="fa-light fa-house"></i>
-            <span class="title">Home</span>
-          </a>
-        </li>
-        <li class="list" data-colour="#3c40c6">
-          <a href="#">
-            <span class="icon"></span><i class="fa-regular fa-user-astronaut"></i>
-            <span class="title">Profile</span>
-          </a>
-        </li><li class="list" data-colour="#05c46b">
-          <a href="#">
-            <span class="icon"></span><i class="fa-regular fa-message-lines"></i>
-            <span class="title">Messages</span>
-          </a>
-        </li><li class="list" data-colour="#0fbcf9">
-          <a href="#">
-            <span class="icon"></span><i class="fa-regular fa-question"></i>
-            <span class="title">Help</span>
-          </a>
-        </li><li class="list" data-colour="#ffa801">
-          <a href="#">
-            <span class="icon"></span><i class="fa-regular fa-gear"></i>
-            <span class="title">Settings</span>
-          </a>
-        </li>
-        <div class="indicator"></div>
-      </ul>
-</div>
-
-<!-- add active class on hovered time-->
-<script type="text/javascript" src="assets/js/hovernav.js">
-</script>
-
-  </body>
+<head>
+	<title>Interactive Home Page</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+		nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #ccc;
+		}
+		nav a {
+			color: #333;
+			display: inline-block;
+			padding: 15px;
+			text-decoration: none;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+		}
+		nav a:hover {
+			color: #fff;
+			background-color: #333;
+		}
+		.search {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 50px;
+		}
+		.search input[type="text"] {
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			width: 300px;
+			font-size: 16px;
+		}
+		.search button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			margin-left: 10px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: all 0.3s ease;
+		}
+		.search button:hover {
+			background-color: #fff;
+			color: #333;
+		}
+		.cart {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			font-size: 24px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		.cart:hover {
+			background-color: #fff;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#">Home</a>
+		<div>
+			<a href="#">Help</a>
+			<a href="#">Contact Us</a>
+		</div>
+	</header>
+	<nav>
+		<a href="#">Category 1</a>
+		<a href="#">Category 2</a>
+		<a href="#">Category 3</a>
+		<a href="#">Category 4</a>
+		<a href="#">Category 5</a>
+	</nav>
+	<div class="search">
+		<input type="text" placeholder="Search...">
+		<button>Go</button>
+	</div>
+	<a href="#" class="cart">&#128722;</a>
+</body>
 </html>
