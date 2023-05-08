@@ -87,13 +87,28 @@
 			background-color: #fff;
 			color: #333;
 		}
+		.help, .home {
+			display: inline-block;
+			padding: 10px;
+			font-size: 24px;
+			background-color: #333;
+			color: #fff;
+			border-radius: 50%;
+			margin-right: 10px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		.help:hover, .home:hover {
+			background-color: #fff;
+			color: #333;
+		}
 	</style>
 </head>
 <body>
 	<header>
-		<a href="#">Home</a>
+		<div class="home">&#127968;</div>
 		<div>
-			<a href="#">Help</a>
+			<div class="help">&#128275;</div>
 			<a href="#">Contact Us</a>
 		</div>
 	</header>
