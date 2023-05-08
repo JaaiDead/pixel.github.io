@@ -1,53 +1,117 @@
-/* Header */
-header {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 30px;
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation */
-nav {
+header {
+  background-color: #333;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
   padding: 10px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #ccc;
-}
-
-/* Main */
-main {
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
 }
 
-/* Footer */
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
+nav a {
+  color: #333;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+nav a:first-child:before {
+  content: "\1F3E0 ";
+  font-size: 20px;
+  margin-right: 10px;
+  animation: pop 0.5s ease-in-out 0s 1 alternate;
+}
+
+nav a:nth-child(2):before {
+  content: "\2757 ";
+  font-size: 20px;
+  margin-right: 10px;
+  animation: pop 0.5s ease-in-out 0s 1 alternate;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.search input[type="text"] {
+  border: none;
+  border-radius: 5px;
   padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.search button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart:hover {
+  background-color: #fff;
+  color: #333;
 }
